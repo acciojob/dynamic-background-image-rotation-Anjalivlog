@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Landscape mode */
+@media (min-aspect-ratio: 1/1) {
+    body {
+        background-image: url('https://photovideocreative.com/wordpress/wp-content/uploads/2017/11/Paysage-en-orientation-paysage.jpg');
+    }
+}
+
+/* Portrait mode */
+@media (max-aspect-ratio: 1/1) {
+    body {
+        background-image: url('https://photovideocreative.com/wordpress/wp-content/uploads/2017/11/Portrait-en-orientation-portrait.jpg');
+    }
+}
